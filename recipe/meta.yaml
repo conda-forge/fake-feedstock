@@ -1,5 +1,5 @@
 {% set name = "fake" %}
-{% set version = "6.1.1" %}
+{% set version = "6.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/fsprojects/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: effb37116f5c5a110e86a4f0fb2a4b8252d30967c85280361b5e5b22ce0945ed
+  sha256: 6a1c8e9f21a8fcec0525e349882a8937e230d7539dbcf1475a40fca8817010ab
 
 build:
   noarch: generic
