@@ -3,7 +3,7 @@ About fake-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fake-feedstock/blob/main/LICENSE.txt)
 
-Home: https://fake.build
+Home: https://fake.build/
 
 Package license: Apache-2.0
 

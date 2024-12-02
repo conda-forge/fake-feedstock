@@ -4,6 +4,7 @@ set -o xtrace -o nounset -o pipefail -o errexit
 
 mkdir -p ${PREFIX}/bin
 mkdir -p ${PREFIX}/libexec/${PKG_NAME}
+ln -sf ${DOTNET_ROOT}/dotnet ${PREFIX}/bin
 
 # Delete vendored tool and build with dotnet publish
 rm -rf global.json
@@ -19,6 +20,7 @@ tee ${PREFIX}/bin/fake-cli << EOF
 #!/bin/sh
 exec \${DOTNET_ROOT}/dotnet exec \${CONDA_PREFIX}/libexec/fake/fake-cli.dll "\$@"
 EOF
+chmod +x ${PREFIX}/bin/fake-cli
 
 tee ${PREFIX}/bin/fake-cli.cmd << EOF
 call %DOTNET_ROOT%\dotnet exec %CONDA_PREFIX%\libexec\fake\fake-cli.dll %*
