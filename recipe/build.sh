@@ -28,3 +28,5 @@ EOF
 
 # Download dependency licenses with dotnet-project-licenses
 dotnet-project-licenses --input src/app/fake-cli/fake-cli.fsproj -t -d license-files
+
+rm ${PREFIX}/bin/dotnet
