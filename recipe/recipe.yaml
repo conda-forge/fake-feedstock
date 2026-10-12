@@ -1,5 +1,5 @@
 context:
-  version: "6.1.4"
+  version: "6.2.0"
 
 package:
   name: fake
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/fsprojects/fake/archive/${{ version }}.tar.gz
-  sha256: d1312e0ba4c7861e9e3edfc6585e22408a09e5ee1eb91218d993da7900fd72b6
+  sha256: af69285aefc632b566dee3f198130e593ceabb60b3e9d2c99e43234e173e7bd5
 
 build:
   number: 0
